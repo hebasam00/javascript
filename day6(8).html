@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var personObject = { name: "John", age: 30 };
+
+localStorage.setItem('person', JSON.stringify(personObject));
+
+var retrievedObject = JSON.parse(localStorage.getItem('person'));
+
+console.log('Retrieved object:', retrievedObject);
+
+
+    </script>
+</body>
+</html>

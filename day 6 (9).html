@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+var item1 = "Value 1";
+var item2 = 42;
+var item3 = { name: "John", age: 30 };
+
+localStorage.setItem('item1', item1);
+localStorage.setItem('item2', item2);
+localStorage.setItem('item3', JSON.stringify(item3));
+
+var retrievedItem1 = localStorage.getItem('item1');
+var retrievedItem2 = localStorage.getItem('item2');
+var retrievedItem3 = JSON.parse(localStorage.getItem('item3'));
+
+console.log('Retrieved item 1:', retrievedItem1);
+console.log('Retrieved item 2:', retrievedItem2);
+console.log('Retrieved item 3:', retrievedItem3);
+
+    </script>
+</body>
+</html>

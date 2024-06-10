@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+localStorage.setItem('myItem', 'This is my item.');
+
+var retrievedItem = localStorage.getItem('myItem');
+
+console.log('Retrieved item:', retrievedItem);
+
+localStorage.removeItem('myItem');
+
+var removedItem = localStorage.getItem('myItem');
+
+console.log('Removed item:', removedItem);
+//task 4
+</script>
+</body>
+</html>

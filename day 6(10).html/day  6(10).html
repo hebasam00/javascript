@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+var initialValue = "Value 1";
+
+localStorage.setItem('myItem', initialValue);
+
+var retrievedValue = localStorage.getItem('myItem');
+
+console.log('Initial value:', retrievedValue);
+
+var updatedValue = "Updated Value";
+
+localStorage.setItem('myItem', updatedValue);
+
+var updatedRetrievedValue = localStorage.getItem('myItem');
+
+console.log('Updated value:', updatedRetrievedValue);
+
+    </script>
+</body>
+</html>

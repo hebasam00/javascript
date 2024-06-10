@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+
+localStorage.setItem('item1', 'Value 1');
+localStorage.setItem('item2', 'Value 2');
+localStorage.setItem('item3', 'Value 3');
+
+console.log('Items before clearing:');
+for (var i = 0; i < localStorage.length; i++) {
+    var key = localStorage.key(i);
+    var value = localStorage.getItem(key);
+    console.log(key + ': ' + value);
+}
+
+localStorage.clear();
+
+console.log('Items after clearing:');
+for (var i = 0; i < localStorage.length; i++) {
+    var key = localStorage.key(i);
+    var value = localStorage.getItem(key);
+    console.log(key + ': ' + value);
+}
+
+
+   </script> 
+</body>
+</html>

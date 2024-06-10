@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+</head>
+<body>
+    <script>
+var numbersArray = [1, 2, 3];
+
+localStorage.setItem('numbers', JSON.stringify(numbersArray));
+
+var retrievedArray = JSON.parse(localStorage.getItem('numbers'));
+
+console.log('Retrieved array:', retrievedArray);
+
+    </script>
+</body>
+</html>
