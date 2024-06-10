@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        sessionStorage.setItem('myItem', 'This is a test item');
+
+        function itemExists(key) {
+            return sessionStorage.getItem(key) !== null;
+        }
+
+        console.log('Does myItem exist?', itemExists('myItem')); // Should log true
+
+        console.log('Does nonExistingItem exist?', itemExists('nonExistingItem')); // Should log false
+    </script>
+</body>
+</html>

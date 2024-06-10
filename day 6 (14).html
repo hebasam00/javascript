@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        sessionStorage.setItem('myItem', 'This is a test item');
+        console.log('Saved value:', sessionStorage.getItem('myItem')); // Should log 'This is a test item'
+
+        sessionStorage.removeItem('myItem');
+        console.log('Removed value:', sessionStorage.getItem('myItem')); // Should log null, as the item has been removed
+    </script>
+</body>
+</html>

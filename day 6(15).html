@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        sessionStorage.setItem('item1', 'This is the first item');
+        sessionStorage.setItem('item2', 'This is the second item');
+        sessionStorage.setItem('item3', 'This is the third item');
+        
+        console.log('Item 1:', sessionStorage.getItem('item1')); // Should log 'This is the first item'
+        console.log('Item 2:', sessionStorage.getItem('item2')); // Should log 'This is the second item'
+        console.log('Item 3:', sessionStorage.getItem('item3')); // Should log 'This is the third item

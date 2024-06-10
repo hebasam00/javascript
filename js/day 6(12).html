@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        sessionStorage.setItem('myNumber', 123);
+        console.log('Saved value:', sessionStorage.getItem('myNumber')); 
+
+        let savedValue = sessionStorage.getItem('myNumber');
+        console.log('Retrieved value:', savedValue); 
+        
+        
+        let retrievedNumber = Number(savedValue);
+        console.log('Retrieved number as a Number type:', retrievedNumber);
+    </script>
+</body>
+</html>

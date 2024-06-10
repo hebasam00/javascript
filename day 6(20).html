@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        sessionStorage.setItem('name', 'John');
+        sessionStorage.setItem('age', '30');
+        sessionStorage.setItem('city', 'New York');
+
+        let name = sessionStorage.getItem('name');
+        let age = sessionStorage.getItem('age');
+        let city = sessionStorage.getItem('city');
+
+        console.log('Name:', name); 
+        console.log('Age:', age); 
+        console.log('City:', city);
+        </script>
+</body>
+</html>

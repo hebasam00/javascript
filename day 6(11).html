@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        sessionStorage.setItem('greeting', 'Hello, World!');
+        console.log('Saved value:', sessionStorage.getItem('greeting')); 
+
+        let savedValue = sessionStorage.getItem('greeting');
+        console.log('Retrieved value:', savedValue);
+    </script>
+</body>
+</html>

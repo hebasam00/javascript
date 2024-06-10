@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script>
+        sessionStorage.setItem('myBoolean', JSON.stringify(true));
+        console.log('Saved value:', sessionStorage.getItem('myBoolean')); // Should log 'true'
+
+        let savedValue = sessionStorage.getItem('myBoolean');
+        console.log('Retrieved value (string):', savedValue); // Should log 'true'
+
+        let retrievedBoolean = JSON.parse(savedValue);
+        console.log('Retrieved value (boolean):', retrievedBoolean); // Should log true as a boolean
+    </script>
+</body>
+</html>
